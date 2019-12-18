@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'London After Midnight',
-  shortName: 'LAM',
-  description: 'A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery',
-  url: 'https://gatsby-lam.vaporwavy.io', // Domain of your site without prefix!
-  prefix: '/',
-  author: 'Vaporwavy',
-  twitter: ''
+  name: "Untitled QLWAB",
+  shortName: "QLWAB",
+  description: "A visual-ish journey through society and economy",
+  url: "https://www.as-of-yet-undecided.com", // Domain of your site without prefix!
+  prefix: "/",
+  author: "R.Rake",
+  twitter: "drrrake",
 }

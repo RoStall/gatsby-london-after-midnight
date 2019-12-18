@@ -71,14 +71,6 @@ const Layout = props => {
               >
                 RSS
               </Link>
-              <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
             </div>
           </div>
         </div>
@@ -96,7 +88,12 @@ const Layout = props => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Gatsby
+          Gatsby{" "}
+        </a>
+        and
+        <a href="https://vaporwavy.io/london-after-midnight/">
+          {" "}
+          London After Midnight
         </a>
       </footer>
     </div>
