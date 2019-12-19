@@ -55,20 +55,25 @@ class ContentNoImage extends Component {
   }
 }
 
+/* TODO another view of post feed with simple lines. searchable.*/
+/* TODO move these todoss */
 class ContentWithImage extends Component {
   render() {
     const { props } = this.props
     return (
-      <div className="post-card-content">
-        <div>
-          <Link to={props.node.fields.slug} className="post-card-link">
+      <Link to={props.node.fields.slug} className="post-card-link">
+        <div className="post-card-content">
+          <div>
             <h2 className="post-card-title">
               {props.node.frontmatter.title || props.node.fields.slug}
             </h2>
-          </Link>
+          </div>
+          <div className="post-card-date">{props.node.frontmatter.date}</div>
+          <div className="post-card-body">
+            {props.node.frontmatter.description || props.node.excerpt}
+          </div>
         </div>
-        <div className="post-card-date">{props.node.frontmatter.date}</div>
-      </div>
+      </Link>
     )
   }
 }

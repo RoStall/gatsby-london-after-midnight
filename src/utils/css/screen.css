@@ -452,6 +452,11 @@ body {
   margin-top: 16.8px;
 }
 
+.post-card.with-image .post-card-body {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-base);
+}
+
 .post-card-date {
   margin-top: 10px;
   font-style: italic;
@@ -469,7 +474,17 @@ body {
 .post-card-link:hover .post-card-content {
   opacity: 1;
   transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  animation: content-fade-out ease-in forwards 3s;
+}
+
+@keyframes content-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
 }
 
 .post-card-title {
@@ -516,8 +531,6 @@ of the cards without images. The issue is that the selector is being overridden 
   color: var(--color-base);
   background: rgba(0, 0, 0, 0.2);
 }
-
-/* css s.t. on hover, background darkens and post-card-tags and post-card-body appear */
 
 /* Posts without images */
 .post-card.no-image:before {
