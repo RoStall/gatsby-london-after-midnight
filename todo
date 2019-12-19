@@ -1,0 +1,23 @@
+Archives
+    Backburner until more content built out
+    As content filled out, build archive that is simply a scrollable list
+    Then add a search feature to archive
+Analytics
+    Configure google Analytics
+Hosting
+    Setup netlify Hosting
+content 
+    prepare three articles
+Mail list   
+    Setup form for mailchimp, or use DO+SES solution.
+Title
+    Title the damn thing
+Social links
+    disable facebook
+    create twitter account
+    enable social share for articles-view (reddit, facebook, twitter)
+    RSS Feed
+SEO
+    create sitemap
+    study gatsby SEO intricacies
+    decide on keywords

@@ -55,8 +55,6 @@ class ContentNoImage extends Component {
   }
 }
 
-/* TODO another view of post feed with simple lines. searchable.*/
-/* TODO move these todoss */
 class ContentWithImage extends Component {
   render() {
     const { props } = this.props
