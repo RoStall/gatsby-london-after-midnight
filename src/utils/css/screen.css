@@ -481,6 +481,44 @@ body {
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
+/* 
+.post-card.with-image is the class selector we are looking for, to match the properties
+of the cards without images. The issue is that the selector is being overridden in part
+*/
+
+.post-card.with-image:before {
+  display: block;
+  position: absolute;
+  bottom: -0.15em;
+  right: 5vw;
+  font-size: 28vw;
+  line-height: 1em;
+  font-weight: var(--font-heavy);
+  letter-spacing: -0.1em;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.post-card.with-image .post-card-content {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4vw;
+  flex-direction: column;
+}
+
+.post-card.with-image .post-card-title {
+  font-size: 5rem;
+  line-height: 1.15em;
+  text-align: left;
+  color: var(--color-base);
+}
+
+.post-card.with-image .post-card-date {
+  color: var(--color-base);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* css s.t. on hover, background darkens and post-card-tags and post-card-body appear */
+
 /* Posts without images */
 .post-card.no-image:before {
   display: block;
@@ -509,6 +547,7 @@ body {
   color: var(--color-base);
 }
 
+.post-card.with-image:hover .post-card-title,
 .post-card.no-image:hover .post-card-title {
   text-decoration: underline;
 }

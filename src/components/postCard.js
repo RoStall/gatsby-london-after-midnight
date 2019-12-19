@@ -59,14 +59,16 @@ class ContentWithImage extends Component {
   render() {
     const { props } = this.props
     return (
-      <Link to={props.node.fields.slug} className="post-card-link">
-        <div className="post-card-content">
-          {props.node.frontmatter.description}
-          <h2 className="post-card-title">
-            {props.node.frontmatter.title || props.node.fields.slug}
-          </h2>
+      <div className="post-card-content">
+        <div>
+          <Link to={props.node.fields.slug} className="post-card-link">
+            <h2 className="post-card-title">
+              {props.node.frontmatter.title || props.node.fields.slug}
+            </h2>
+          </Link>
         </div>
-      </Link>
+        <div className="post-card-date">{props.node.frontmatter.date}</div>
+      </div>
     )
   }
 }
