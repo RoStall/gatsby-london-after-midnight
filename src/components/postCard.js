@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import Tags from "./tag"
 
+/* delete me */
 export default props => (
   <article
     className={`post-card ${props.count % 3 === 0 && `post-card-large`} ${
